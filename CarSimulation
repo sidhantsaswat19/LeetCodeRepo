@@ -1,0 +1,7 @@
+public class Main{
+  // Main method to start the simulation
+  public static void main(String[] args) {
+      // Invoke the startSimulation method
+      startSimulation();
+  }
+}
