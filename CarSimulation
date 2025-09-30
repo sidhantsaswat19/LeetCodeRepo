@@ -5,3 +5,16 @@ public class Main{
       startSimulation();
   }
 }
+import java.util.Scanner;
+
+// DrivingSimulation class implements the Driving Simulation which includes various actions like turn the engine on/off, accelerate (i.e. increase the speed) and apply the breaks.
+public class DrivingSimulationLab {
+
+    // Initial position of the gear is P (i.e. Park) so, initializing variable gear with same
+    public static String gear = "P";
+    // Initial speed is set to 0, initializing variable speed with same
+    public static int speed = 0;
+    // Engine is initially off so the variable isEngineOn is set to false.
+    public static boolean isEngineOn = false;
+    // Getting user input via scanner class
+    public static Scanner keyBoard = new Scanner(System.in);
