@@ -1,2 +1,2 @@
-# legendary-palm-tree
+# LeetRevise
 LeetCode Problems including solutions
