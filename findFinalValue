@@ -1,0 +1,13 @@
+class Solution {
+    public int findFinalValue(int[] nums, int original) {
+        return recursive(nums,original);
+    }
+    private int recursive(int[] nums,int original){
+        for(int num:nums){
+            if(num==original){
+                return recursive(nums,original*2);
+            }
+        }
+        return original;
+    }
+}
