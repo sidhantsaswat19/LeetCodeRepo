@@ -1,0 +1,13 @@
+class Solution {
+    public boolean isValid(String s) {
+        while(true){
+            String temp =s;
+            s=s.replace("()","");
+            s=s.replace("{}","");
+            s=s.replace("[]","");
+            if(s.equals(temp))
+                break;
+        }
+        return s.isEmpty();
+    }
+}
