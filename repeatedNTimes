@@ -1,0 +1,15 @@
+class Solution {
+    public int repeatedNTimes(int[] nums) {
+        int n = nums.length/2;
+        for(int num:nums){
+          for(int numR:nums){
+              if(num==numR)
+                  n--;
+              if(n==0)
+                  return numR;
+          }
+          n = nums.length/2;
+        }
+        return -1;
+    }
+}
