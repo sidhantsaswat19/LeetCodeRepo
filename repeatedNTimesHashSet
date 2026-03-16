@@ -1,0 +1,14 @@
+class Solution {
+    public int repeatedNTimes(int[] nums) {
+        Set<Integer> repeat = new HashSet<>();
+        for(int i:nums)
+        {
+            if(!repeat.add(i)) //add(element)
+•	returns true → if the element was NOT present and is added
+•	returns false → if the element already exists (duplicate)
+
+              return i;
+        }
+        return -1;
+    }
+}
